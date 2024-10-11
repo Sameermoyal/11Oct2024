@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    vector<int> arr ={1,2,3,4,5};
+     int sum=0;
+     vector<int>pre_sum;
+    for(int i=0;i<arr.size();i++){
+       sum+=arr[i];
+       pre_sum.push_back(sum);
+    }
+    
+   
+    cout<<"pre_sum  : ";
+    for(auto it:pre_sum){
+        cout<<it<< " ";   }
+}
